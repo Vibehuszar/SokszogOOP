@@ -12,7 +12,10 @@ public class Main {
         Haromszog h1 = new Haromszog(3,4,5);
         System.out.println(h1);
 
-        Paralelogramma p1 = new Paralelogramma(3,68,4);
+        Paralelogramma p1 = new Paralelogramma();
         System.out.println(p1);
+
+        Negyzet n1 = new Negyzet();
+        System.out.println(n1);
     }
 }

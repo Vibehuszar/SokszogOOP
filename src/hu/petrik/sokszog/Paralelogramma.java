@@ -42,14 +42,14 @@ public class Paralelogramma extends Sokszog{
     }
 
     public double getKerulet(){
-        return 2 * super.getA() + 2 * this.getB();
+        return 2 * this.getA() + 2 * this.getB();
     }
 
     public double getTerulet(){
 
         double rad = (alfa * 180) / Math.PI;
 
-        return super.getA() * this.b * Math.sin(rad);
+        return this.getA() * this.b * Math.sin(rad);
     }
 
     @Override

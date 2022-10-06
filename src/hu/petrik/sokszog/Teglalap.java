@@ -9,6 +9,15 @@ public class Teglalap extends Sokszog{
         this.b = b;
     }
 
+    public Teglalap(){
+        super(veletlenOldalGeneralas());
+        this.b = veletlenOldalGeneralas();
+    }
+
+    public static double veletlenOldalGeneralas(){
+        return Math.random() * 10 + 5;
+    }
+
     public double getB() {
         return b;
     }
@@ -27,7 +36,7 @@ public class Teglalap extends Sokszog{
 
     @Override
     public String toString() {
-        return String.format("Téglalap: a = %-10.3f b = %-10.3f %s",
+        return String.format("Téglalap: a = %-10.3f b = %-10.3f %s  ",
                 this.getA(), this.getB(), super.toString());
     }
 }

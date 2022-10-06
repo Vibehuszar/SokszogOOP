@@ -17,5 +17,9 @@ public class Main {
 
         Negyzet n1 = new Negyzet();
         System.out.println(n1);
+
+        Sokszogek s = new Sokszogek(6);
+        System.out.println(s);
+        System.out.println(s.getMaxTerulet());
     }
 }
